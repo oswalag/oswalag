@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Air Quality Projet</title>
+</head>
+<body>
+    <div class="glass">
+        <h1>Air Quality</h1>
+        <p>Bienvenido al monitor de calidad del aire</p>
+        <p>La calidad del aire en este momento es:</p>
+        <p id="mensaje"></p>
+        <p id="calidad"></p>
+    </div>
+
+    <div class="circle1" id="circle"></div>
+    <div class="circle2"></div>
+
+   
+
+
+
+ <!--FIREBASE SCRIPTS-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyD3BOWba4_HUQN8GpZGz7t1BW8nw5MJqOg",
+        authDomain: "polen-f3b26.firebaseapp.com",
+        databaseURL: "https://polen-f3b26-default-rtdb.firebaseio.com",
+        projectId: "polen-f3b26",
+        storageBucket: "polen-f3b26.appspot.com",
+        messagingSenderId: "834168607258",
+        appId: "1:834168607258:web:3cc604d8218dbb97c677a3"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+      
+    <script src="index.js"></script>
+</body>
+</html>
+
