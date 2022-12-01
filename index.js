@@ -1,4 +1,4 @@
-/*------------------ Database ----------------------------*/
+/------------------ Database ----------------------------/
 //Variable de referencia a la base de datos en tiempo real
 var medicionRef = firebase.database().ref("/UsersData/A0nzBFo6hFgBwoPuUcSqdqIURqm1/test/int");
 //Método de observación de la base de datos en tiempo real
@@ -7,8 +7,15 @@ medicionRef.on("value", (snapshot) => {
     consumo = snapshot.val();
       document.getElementById("calidad").innerHTML =
         Number.parseFloat(consumo).toFixed(2) + " ug/m";
-        if(consumo < 100){
-            document.getElementsById("circle").style.backgroundColor = "red";
+        if(consumo < 40){
+          document.querySelector('.circle1').style.backgroundColor = '#09FF06';
+          document.querySelector('.circle2').style.backgroundColor = '#09FF06';
+        } else if(consumo >= 40 && consumo <= 100){
+          document.querySelector('.circle1').style.backgroundColor = '#FFFF06';
+          document.querySelector('.circle2').style.backgroundColor = '#FFFF06';
+        } else if(consumo > 100){
+          document.querySelector('.circle1').style.backgroundColor = '#FF0606';
+          document.querySelector('.circle2').style.backgroundColor = '#FF0606';
         }
     })
     .catch((error) => {
