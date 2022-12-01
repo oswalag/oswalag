@@ -14,7 +14,7 @@
     font-family: Montserrat;
     font-size: 1rem;
     height: 100vh;
-    /*background: linear-gradient(to right top, #65dfc9, #6cdbeb);*/
+    /background: linear-gradient(to right top, #65dfc9, #6cdbeb);/
     background-color: black;
     display: flex;
     justify-content: center;
@@ -32,12 +32,17 @@
 
   p{
     margin-top: 1rem;
-    font-size: 3rem;
+    font-size: 1.75rem;
   }
+
+#mensaje{
+    font-size: 3rem;
+}
 
   #calidad{
     margin-top: 4rem;
     font-weight:900;
+    font-size: 3rem;
   }
 
   .glass {
@@ -68,13 +73,13 @@
     -o-border-radius: 50%;
     background: linear-gradient(
       to right bottom,
-      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.4),
       rgba(255, 255, 255, 0.1)
     );
     position: absolute;
   }
   .circle1 {
-    /*background-color: rgb(14, 243, 14);*/
+    /background-color: rgb(14, 243, 14);/
     top: 5%;
     right: 5%;
   }
